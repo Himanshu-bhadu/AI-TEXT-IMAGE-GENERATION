@@ -22,11 +22,15 @@ const CreatePost = () => {
     try {
       setGeneratingImg(true);
 
-      const response = await fetch('http://localhost:3000/api/v1/image', {
+    const response = await fetch(
+      `${import.meta.env.VITE_API_URL}/api/v1/image`,
+      {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ prompt: form.prompt }),
-      });
+      }
+    );
+
 
       const data = await response.json();
       setform({ ...form, photo: data.photo });
@@ -48,11 +52,15 @@ const CreatePost = () => {
     try {
       setLoading(true);
 
-      await fetch('http://localhost:3000/api/v1/post', {
+    await fetch(
+      `${import.meta.env.VITE_API_URL}/api/v1/post`,
+      {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
-      });
+      }
+    );
+
 
       navigate('/');
     } catch (err) {

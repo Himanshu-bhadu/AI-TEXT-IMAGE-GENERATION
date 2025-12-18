@@ -23,7 +23,7 @@ const Home = () => {
     const fetchPosts = async () => {
       setLoading(true);
       try {
-        const res = await fetch('http://localhost:3000/api/v1/post');
+        const res = await fetch(`${import.meta.env.VITE_API_URL}/api/v1/post`);
         const data = await res.json();
         setAllPosts(data.reverse());
       } catch (err) {
@@ -106,3 +106,4 @@ const Home = () => {
 };
 
 export default Home;
+
