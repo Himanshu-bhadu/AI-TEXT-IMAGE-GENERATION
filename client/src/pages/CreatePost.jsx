@@ -88,7 +88,7 @@ const CreatePost = () => {
         </h1>
         {/* Subtitle: Medium Gray on Light, Light Gray on Dark */}
         <p className='mt-2 text-[#666e75] dark:text-gray-400 text-[16px] max-w [500px]'>
-          Create imaginative and visually stunning images through DALL-E AI and share them with the community
+          Create imaginative and visually stunning images through AI and share them with the community
         </p>
       </div>
 
