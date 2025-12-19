@@ -17,17 +17,17 @@ Users can generate images from text prompts, preview them, and share them with t
 
 Frontend
 
-React (Vite)
-React Router
-Tailwind CSS
+React (Vite),
+React Router,
+Tailwind CSS,
 Fetch API
 
 Backend
 
-Node.js
-Express
-MongoDB + Mongoose
-Hugging Face Inference API
+Node.js,
+Express,
+MongoDB + Mongoose,
+Hugging Face Inference API,
 Deployment
 
 Frontend: Vercel
